@@ -13,8 +13,6 @@
       - **deploy:** Clones iTrust, builds the docker image and runs docker compose.
         - After this step you should be able to open `localhost:8080/iTrust` and use iTrust.
 
-_Note: Our private iTrust repo: [here](https://github.ncsu.edu/smirhos/iTrust-v23)_
-
 ### Instructions for deployment:
 **VM:**</br>
 The Vagrantfile with needed network configuration is provided.
@@ -36,7 +34,7 @@ Now you can use iTrust if you open this in the browser: `localhost:8080/iTrust` 
 [Note: You may need to update the inventory file manualy if you have more than one server or using a different vm than the provided Vagrantfile]
 
 ### Report/Experience
-I (Sam) had experience with setting up iTrust from csc326 as undergraduate student (last semester). At the end of that course I made a docker image for iTrust but since I didn't have much experience with it, it took about 20 hours of work at that time. Now that we have more experience with docker, we realized that the docker infrastructure that I had wasn't really the best. For example I was manually exporting the war file with eclipse, or I was using MySQL docker container without correct configuration which could cause data loss in case of failure. 
+I had experience with setting up iTrust from csc326 as undergraduate student (last semester). At the end of that course I made a docker image for iTrust but since I didn't have much experience with it, it took about 20 hours of work at that time. Now that we have more experience with docker, we realized that the docker infrastructure that I had wasn't really the best. For example I was manually exporting the war file with eclipse, or I was using MySQL docker container without correct configuration which could cause data loss in case of failure. 
 
 iTrust deployment automation gotchas:
   - Be careful when setting file permissions:
